@@ -4,15 +4,15 @@ function log(target, name, descriptor) {
   console.log(target, name, descriptor)
 
   // store the original function in a var. 
-  const original = descriptor.value
+  const original = descriptor.value;
 
   // do some manipulations with the descriptor.value
   descriptor.value = () => {     
-    console.log("Hacked ?")
+    console.log("How was this Hacked?")
   }
 
   // return the descriptor
-  return descriptor
+  return descriptor;
 }
 
 @Component({
@@ -24,6 +24,10 @@ function log(target, name, descriptor) {
 export class AppComponent {
   title = 'NG 6 Apps';
  
+  constructor() {
+    this.aSimpleMethod()
+  }
+
   @log
   aSimpleMethod() {
     console.log("Hello?")
