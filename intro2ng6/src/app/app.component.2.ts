@@ -18,7 +18,7 @@ export class AppComponent {
   }
 
   aSimpleMethod(a, b) {
-    console.log("What's the answer?");
+    console.log("what's the answer?");
     return a*b
   } 
 }
