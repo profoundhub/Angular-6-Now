@@ -2,6 +2,13 @@ import { Component } from '@angular/core';
 
 function log(target, name, descriptor) {
   console.log(target, name, descriptor)
+
+  // store the original function in a var. 
+  const original = descriptor.value
+  // do some manipulations with the descriptor.value
+
+  // return the descriptor
+
 }
 
 @Component({
@@ -12,7 +19,7 @@ function log(target, name, descriptor) {
 
 export class AppComponent {
   title = 'NG 6 Apps';
-
+ 
   @log
   aSimpleMethod() {
     console.log("Hello?")
