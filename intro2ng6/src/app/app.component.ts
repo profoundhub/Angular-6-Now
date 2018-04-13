@@ -12,7 +12,7 @@ function log(target, name, descriptor) {
   }
 
   // return the descriptor
-
+  return descriptor
 }
 
 @Component({
