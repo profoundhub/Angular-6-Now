@@ -8,10 +8,11 @@ function log(target, name, descriptor) {
 
   // do some manipulations with the descriptor.value
   descriptor.value = () => {     
-    console.log("How was this Hacked?")
+    console.error("How was this Hacked?")
   }
 
   // return the descriptor
+  original();
   return descriptor;
 }
 
