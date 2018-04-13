@@ -5,7 +5,11 @@ function log(target, name, descriptor) {
 
   // store the original function in a var. 
   const original = descriptor.value
+
   // do some manipulations with the descriptor.value
+  descriptor.value = () => {     
+    console.log("Hacked ?")
+  }
 
   // return the descriptor
 
