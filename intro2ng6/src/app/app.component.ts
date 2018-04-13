@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 function log(className) {
-  console.log(className)
+  console.log(className);
 }
 
 @Component({
@@ -18,7 +18,7 @@ export class AppComponent {
   }
 
   aSimpleMethod(a, b) {
-    // console.log("what's the answer?");
+    console.log("what's the answer?");
     return a*b
   } 
 }
