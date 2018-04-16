@@ -10,6 +10,11 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+  
+    loginUser(event) {
+      console.log(event);
+    }
 
 }
