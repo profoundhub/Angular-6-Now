@@ -19,15 +19,15 @@ import { HttpClient } from 'selenium-webdriver/http';
     HttpClient,
     RouterModule.forRoot([
       {
-        path: '',
-        component: HomeComponent
-      }, {
         path: 'login',
         component: LoginComponent
       }, {
         path: 'admin',
         component: AdminComponent
-      }      
+      }, {
+        path: '',
+        component: HomeComponent
+      }
     ])
   ],
   providers: [],
