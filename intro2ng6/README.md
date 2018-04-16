@@ -1,17 +1,17 @@
 # Intro2ng6
 
 ## Require:
-* App Componments
+* App Componment
 * Backend Validation
 * Routing
 * Route Protection
 
 ### To Do:
-* Login Componments
-* Admin Componments
+* Login Componment
+* Admin Componment
 
 #### Validation:
 * Home Route
 * Login Route
 * Admin Route
-* LogOut Route
+* Logout Route
