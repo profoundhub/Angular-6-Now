@@ -1,0 +1,21 @@
+{
+  "name": "Angular-6-Now",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/profoundhub/Angular-6-Now/issues"
+  },
+  "homepage": "https://github.com/profoundhub/Angular-6-Now#readme",
+  "dependencies": {
+    "socks": "^2.2.0",
+    "uuid": "^3.2.1"
+  }
+}
