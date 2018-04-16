@@ -15,7 +15,9 @@
   },
   "homepage": "https://github.com/profoundhub/Angular-6-Now#readme",
   "dependencies": {
-    "socks": "^2.2.0",
     "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "socks": "^2.2.0"
   }
 }
