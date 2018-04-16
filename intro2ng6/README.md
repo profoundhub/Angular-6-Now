@@ -11,8 +11,7 @@
 * Admin Componments
 
 #### Validation:
-
-* Home
-* Login
-* Admin
-* LogOut
+* Home Route
+* Login Route
+* Admin Route
+* LogOut Route
