@@ -6,8 +6,8 @@ export class AuthService {
   constructor() { }
 
   getUserDetails() {
-    // post details to HTTP / API Server + return user if correct.
-    
+    // post details to HTTP / API Server + return user info if correct.
+
   }
 
 }
