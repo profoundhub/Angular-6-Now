@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
 // import {HttpClient} from "@angular/common/http";
 
 // import { UserService } from './user.service'
-// import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './auth.guard';
 // import { LogoutComponent } from './logout/logout.component'
 
 @NgModule({
@@ -34,13 +34,14 @@ import { HomeComponent } from './home/home.component';
       }, {
         path: 'admin',
         component: AdminComponent
+        canActivate: [AuthGuard]
       }, {
         path: '',
         component: HomeComponent
       }
     ])
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 

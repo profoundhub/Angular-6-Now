@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'NG 6 Apps';
+  records = [];
  
   constructor() {} 
   
