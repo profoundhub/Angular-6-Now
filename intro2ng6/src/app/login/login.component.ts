@@ -14,6 +14,7 @@ export class LoginComponent implements OnInit {
 
   loginUser(event) {
     event.preventDefault()
+    constant target = event.target 
     console.log(event)
   }
 
