@@ -17,4 +17,5 @@ export class AdminComponent implements OnInit {
       this.message = data.message
     })
   }
+  
 }
