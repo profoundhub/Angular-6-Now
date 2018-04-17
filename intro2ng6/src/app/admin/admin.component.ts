@@ -8,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  message = "Loading...."
+  message = "Loading ..."
   
-  constructor(private user: UserService) { }
+  constructor() { }
+  // private user: UserService
 
   ngOnInit() {
-    this.user.getSomeData().subscribe(data => {
-      this.message = data.message
-    })
+    // this.user.getSomeData().subscribe(data => {
+    //   this.message = data.message
+    // })
   }
-  
+
 }

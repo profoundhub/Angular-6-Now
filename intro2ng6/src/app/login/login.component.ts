@@ -23,6 +23,15 @@ export class LoginComponent implements OnInit {
 
     this.Auth.getUserDetails(username, password);
     // console.log(event);    
+
+    if(data.success) {
+        this.router.navigate(['admin'])
+        this.Auth.setLoggedIn(true)
+      } else {
+        window.alert(data.message)
+      }
+    })
+    
     console.log(username, password);
   }
 
