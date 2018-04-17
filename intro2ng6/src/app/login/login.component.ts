@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [AuthService] // important
+  // providers: [AuthService] // important
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private Auth: AuthService) { }
+  constructor(private Auth: AuthService, private router: Router) { }
 
   ngOnInit() {
   }  
@@ -22,6 +23,15 @@ export class LoginComponent implements OnInit {
 
     this.Auth.getUserDetails(username, password);
     // console.log(event);    
+
+    if(data.success) {
+        this.router.navigate(['admin'])
+        this.Auth.setLoggedIn(true)
+      } else {
+        window.alert(data.message)
+      }
+    })
+    
     console.log(username, password);
   }
 
