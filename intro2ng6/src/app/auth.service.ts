@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getUserDetails(username, password) {
     // post details to HTTP / API Server + return user info if correct.
-
+    return this.http.post('/api/auth.php', {
+      username,
+      password
+    }).subscribe(data => {
+      console.log(data, " is from server")
+    });
   }
 
 }
