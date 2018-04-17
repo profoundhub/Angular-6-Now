@@ -8,7 +8,7 @@ export class AuthService {
 
   getUserDetails(username, password) {
     // post details to API Server + return user info if correct.
-    return this.http.post('./test/api/auth.php', {
+    return this.http.post('/api/auth.php', {
       username,
       password
     }).subscribe(data => {
