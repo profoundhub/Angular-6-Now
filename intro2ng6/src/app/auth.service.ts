@@ -5,6 +5,10 @@ import { HttpClient } from '@angular/common/http';
 export class AuthService {
 
   constructor(private http: HttpClient) { }
+  
+  get isLoggedIn() {
+    return this.loggedInStatus
+  }
 
   getUserDetails(username, password) {
     // post details to API Server + return user info if correct.
