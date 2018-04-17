@@ -11,9 +11,11 @@ export class AuthService {
     return this.http.post('/api/auth.php', {
       username,
       password
-    }).subscribe(data => {
-      console.log(data, " from server");
-    });
+    })
+    // .subscribe(data => {
+    //   console.log(data, " from server");
+    // }
+  );
   }
 
 }
