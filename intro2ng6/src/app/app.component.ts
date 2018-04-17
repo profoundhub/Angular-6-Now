@@ -17,4 +17,11 @@ export class AppComponent {
   //   console.log("What's the answer?");
   //   return a*b
   // } 
+  
+  constructor() {
+  } 
+  
+  ngOnInit() {    
+  }
+
 }
