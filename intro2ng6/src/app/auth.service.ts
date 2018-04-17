@@ -14,8 +14,8 @@ export class AuthService {
     })
     // .subscribe(data => {
     //   console.log(data, " from server");
-    // }
-  );
+    // });
+  
   }
 
 }
