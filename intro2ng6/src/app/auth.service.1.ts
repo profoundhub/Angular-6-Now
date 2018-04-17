@@ -12,6 +12,10 @@ export class AuthService {
       username,
       password
     })
+    // .subscribe(data => {
+    //   console.log(data, " from server");
+    // });
+  
   }
 
 }
