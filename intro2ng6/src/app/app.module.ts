@@ -13,6 +13,10 @@ import { HomeComponent } from './home/home.component';
 // import {HttpClientModule} from '@angular/common/http';
 // import {HttpClient} from "@angular/common/http";
 
+// import { UserService } from './user.service'
+// import { AuthGuard } from './auth.guard';
+// import { LogoutComponent } from './logout/logout.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,7 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    HttpClientModule,    
     RouterModule.forRoot([
       {
         path: 'login',
@@ -36,7 +40,7 @@ import { HomeComponent } from './home/home.component';
       }
     ])
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 
