@@ -10,17 +10,17 @@ if (isset($_POST) && !empty($_POST)) {
             "success": true;
             "secret": "This is the Secret, only the Admins Know!"
         }
-            <?php 
-                } else {
-            ?>
+<?php 
+    } else {
+?>
         {
             "success": false;
             "secret": "Invalid Credentials!"
         }        
-            <?php
-                }
-            } else {
-            ?>
+<?php
+    }
+} else {
+?>
         {
             "success": false;
             "secret": "Only POST Access Accepted"

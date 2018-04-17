@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { AuthService } from './auth.service';
-
 import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './auth.service';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
+
 // import { HttpClient } from 'selenium-webdriver/http';
 // import {HttpClientModule} from '@angular/common/http';
 // import {HttpClient} from "@angular/common/http";
